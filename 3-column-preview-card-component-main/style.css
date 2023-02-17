@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    display:grid;
+    justify-items: center;
+    align-items: center;
+}
+
+main{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    width:60vw;
+    height:auto;
+    border-radius: 5px;
+}
+.container{
+    padding:2em;
+}
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;    
+}
+
+.sedans, .suvs, .luxury{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+
+h2{
+    color:white;
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    margin:1em 0;
+    font-size: 1.5em;
+    line-height: 1.6;
+
+}
+
+p {
+    font-size: 0.6em;
+    margin-bottom:4em;
+    line-height: 1.6;
+}
+
+
+
+.suvs{
+    background-color: hsl(184, 100%, 22%);
+
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+
+.sedans button{
+    border-radius: 2em;
+    background-color: white;
+    padding:10px 20px ;
+    border:1px solid #E38826;
+    color:#E38826;
+    font-size: 15px;
+    text-align: center;
+}
+
+.sedans button:hover{
+    color:white;
+    background-color:#E38826 ;
+    border:1px solid white;
+
+}
+
+.suvs button{
+    border-radius: 2em;
+    background-color: white;
+    padding:10px 20px ;
+    border:1px solid #006970;
+    color:#006970;
+    font-size: 15px;
+    text-align: center;
+}
+
+.suvs button:hover{
+    color:white;
+    background-color:#006970 ;
+    border:1px solid white;
+}
+
+.luxury button{
+    border-radius: 2em;
+    background-color: white;
+    padding:10px 20px ;
+    border:1px solid #004241;
+    color:#004241;
+    font-size: 15px;
+    text-align: center;
+}
+
+.luxury button:hover{
+    color:white;
+    background-color:#004241 ;
+    border:1px solid white;
+}
+
+
+
+
+
+@media(max-width:576px){
+    main{
+        display:grid;
+        grid-template-columns: 1fr;
+        margin:3em 0;
+    }
+
+    .sedans{
+        border-radius: 5px 5px 0 0;    
+    }
+
+    .luxury{
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
